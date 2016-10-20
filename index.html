@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>SDU ClassBox</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/login.js" ></script>
+</head>
+<body onkeydown="keylog()">
+<div class="container"style="top: 120px;">
+	<section id="content">
+		<form id="login_form">
+			<h1>SDU ClassBox</h1>
+			<div id="topmess" style="margin-top: -15px;margin-bottom: 10px;font-family: '微软雅黑';display: none;">账号或密码错误</div>
+			<div>
+				<input type="text" placeholder="Username" required="" id="username" />
+				<div id="usermess" style="margin-bottom：5px;font-family: '微软雅黑';display: none;">请填写账号~~~</div>
+			</div>
+			<div>
+				<input type="password" placeholder="Password" required="" id="password" />
+				<div id="passmess" style="font-family: '微软雅黑';"></div>
+			</div>
+			<div >
+				<input type="button" value="Log in" id="submit" style="left: 100px;" onclick="login()"/>
+			</div>
+		</form><!-- form -->
+	</section><!-- content -->
+</div><!-- container -->
+</body>
+</html>
